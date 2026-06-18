@@ -9,7 +9,7 @@ const lines = [
 ];
 
 const subText =
-  "A future where what you build is determined by your character and your work — not the family you were born into.";
+  "A future where what a man builds reaches his children's children — not because he was lucky, but because he had someone in his corner who knew how to pass it on.";
 
 export default function SceneVision() {
   const ref = useRef<HTMLDivElement>(null);
