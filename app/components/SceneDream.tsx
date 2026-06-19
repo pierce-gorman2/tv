@@ -48,7 +48,7 @@ export default function SceneDream() {
   const response = selected ? responses[selected] : null;
 
   return (
-    <section className="relative min-h-screen bg-[#0a0a0a] flex flex-col justify-center px-6 py-28">
+    <section className="relative min-h-screen bg-[#0a0a0a] flex flex-col justify-center px-6 py-28 pb-24">
       <div ref={ref} className="max-w-4xl mx-auto w-full">
 
         <motion.p
