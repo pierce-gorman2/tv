@@ -57,7 +57,7 @@ export default function SceneDream() {
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="display-font text-2xl md:text-3xl font-light text-[#6b6560] tracking-wide mb-3"
         >
-          But you —
+          So tell us —
         </motion.p>
 
         <motion.p
@@ -66,7 +66,7 @@ export default function SceneDream() {
           transition={{ duration: 1.1, delay: 0.25, ease: "easeOut" }}
           className="display-font text-4xl md:text-6xl font-light text-[#f0ece4] leading-tight tracking-wide mb-16"
         >
-          you already know what you&apos;re building.
+          what is it you&apos;re building?
         </motion.p>
 
         <motion.p
