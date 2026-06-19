@@ -17,12 +17,12 @@ export default function SceneVision() {
   const [valueIndex, setValueIndex] = useState(1);
   const startValue = PRESETS[valueIndex];
 
-  // Without plan: 30% of wealth survives each gen
-  // With Traditio: 65% survives each gen
+  // Without plan: typical generational decay
+  // With Traditio: structured succession + continued growth each generation
   const withoutGen2 = Math.round(startValue * 0.30);
   const withoutGen3 = Math.round(startValue * 0.10);
-  const withGen2 = Math.round(startValue * 0.65);
-  const withGen3 = Math.round(startValue * 0.42);
+  const withGen2 = Math.round(startValue * 2.1);
+  const withGen3 = Math.round(startValue * 4.8);
 
   return (
     <section className="relative min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center px-6 py-24">
@@ -80,14 +80,14 @@ export default function SceneVision() {
           <div className="grid grid-cols-2 gap-6">
             {/* Without */}
             <div className="flex flex-col gap-4">
-              <p className="font-sans text-xs text-[#4a4540] tracking-[0.15em] uppercase">Without a plan</p>
+              <p className="font-sans text-xs text-[#4a4540] tracking-[0.15em] uppercase">Without a plan — typical decay</p>
               <GenerationRow gen="You" value={startValue} muted={false} />
               <GenerationRow gen="Your children" value={withoutGen2} muted={true} />
               <GenerationRow gen="Their children" value={withoutGen3} muted={true} dim={true} />
             </div>
             {/* With */}
             <div className="flex flex-col gap-4">
-              <p className="font-sans text-xs text-[#C9A84C]/70 tracking-[0.15em] uppercase">With Traditio</p>
+              <p className="font-sans text-xs text-[#C9A84C]/70 tracking-[0.15em] uppercase">With Traditio — compounding growth</p>
               <GenerationRow gen="You" value={startValue} muted={false} gold={true} />
               <GenerationRow gen="Your children" value={withGen2} muted={false} gold={true} />
               <GenerationRow gen="Their children" value={withGen3} muted={false} gold={true} />
