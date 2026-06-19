@@ -1,11 +1,13 @@
 import SceneOpening from "./components/SceneOpening";
+import SceneManifesto from "./components/SceneManifesto";
 import SceneDream from "./components/SceneDream";
-import SceneEconomy from "./components/SceneEconomy";
+import SceneStatGDP from "./components/SceneStatGDP";
+import SceneStatJobs from "./components/SceneStatJobs";
+import SceneStatNewJobs from "./components/SceneStatNewJobs";
 import SceneGap from "./components/SceneGap";
 import SceneWhy from "./components/SceneWhy";
 import SceneWord from "./components/SceneWord";
 import SceneModel from "./components/SceneModel";
-import SceneVision from "./components/SceneVision";
 import SceneCall from "./components/SceneCall";
 import Footer from "./components/Footer";
 import CursorGlow from "./components/CursorGlow";
@@ -18,31 +20,33 @@ export default function Home() {
       <CursorGlow />
       <ScrollProgress />
 
-      {/* 1. The dream — you've been wanting to build something */}
+      {/* 1. You've been dreaming about building something */}
       <SceneOpening />
 
-      {/* 2. What are you building? Personal connection */}
+      {/* 2. You were not created to consume — you were created to build */}
+      <SceneManifesto />
+
+      {/* 3. What is it you're building? */}
       <SceneDream />
 
-      {/* 3. Why it matters — the economic case for builders */}
-      <SceneEconomy />
+      {/* 4–6. Three full-screen animated stat scenes */}
+      <SceneStatGDP />
+      <SceneStatJobs />
+      <SceneStatNewJobs />
 
-      {/* 4. The gap — what stops most men */}
+      {/* 7. The gap — what stops most men */}
       <SceneGap />
 
-      {/* 5. Our conviction — why we exist */}
+      {/* 8. Our conviction */}
       <SceneWhy />
 
-      {/* 6. Our name is our model */}
+      {/* 9. Our name is our model */}
       <SceneWord />
 
-      {/* 7. How we work */}
+      {/* 10. How we work */}
       <SceneModel />
 
-      {/* 8. What it becomes */}
-      <SceneVision />
-
-      {/* 9. The call */}
+      {/* 11. The call */}
       <SceneCall />
 
       <Footer />
